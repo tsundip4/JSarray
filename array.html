@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>array java</title>
+</head>
+<body>
+	<h1 id="array"></h1>
+	<!--<button onclick="myarray()">unshift</button>-->
+	<h2 id="array1"></h2>
+	<!--<button onclick="random()">rando_num</button>--><!-- once the button is clicked random number() function will be activate-->
+	<script type="text/javascript">
+
+		// array iteration
+		//var array = ["ram", "shyam", "hari"];
+		var array = [1, 20, 40, 6, 90, 80, 100, 0], text ="";
+		//array.forEach(myFunction);// for each function passes each element of an array
+		// var back=array.map(myFunction);// this will create new array with certain modification
+		//var back = array.filter(myFunction);// which creates new array with elements thatpasses the test
+		var sum = array.reduce(myFunction, 100); //this will return single value of the array
+		document.getElementById("array").innerHTML = "<br>"+ sum ;
+		var total;
+
+		function myFunction(sum1,value){// sum1 and value are local variable and argument of myFunction
+
+			//return value > 25;// return the number whose value is greater than 25
+			return sum1+value;
+
+		}
+
+
+		// sorting randomly any given array elements
+
+		/*var array = [1, 20, 40, 6, 90, 80, 100, 0], i, random_num, temp;// three variable are declared
+		
+		function random(){
+			for(i= array.length-1; i>0; i--){
+			random_num = Math.floor(Math.random() * i);//Math.floor(Math.randim() gives any new value randomly 
+			temp = array[random_num];// random num will give the index between 0 to 7 and later on 0 to 6 and so on  and number is assigned to temp
+			array[random_num] = array[i];// this will swap the number between array[random_num] and array[i]
+			array[i] = temp;// finally the value assigned in temp is returned to array[i]
+
+		}
+
+		document.getElementById("array").innerHTML = array;
+
+		}
+		*/
+
+
+		/* array Methods*/
+		//var  x=["car", "bus", "truck"], y, i, z;
+		//y=["ram", "shyam"];
+		/* sorting of an array*/
+		//x.sort();// this will sort array according to the alphabetic order
+		//document.getElementById("array").innerHTML = x;// redult will be published according to the order
+
+		// for nuber sorting is quite differnt
+
+		/*var x = [1, 20, 40, 6, 90, 80, 100, 0], y, z;
+		y = x.sort();
+
+		document.getElementById("array").innerHTML = "number are not properly arranged since JS only sees front number"+
+		"<br>"+ y+ "<br><br>";
+
+		function sorting(){*/
+			/* for ascending order*/
+	    //z = x.sort(function(a,b){return(a-b)});// here two argument are passed at a time and if result is negative it will plaed before another and similar procee goes on for many other 
+	        /*z = x.sort(function(a,b){return(b-a)}); // here if b is greater it will placed infrong of a for descending order
+			document.getElementById("array1").innerHTML  = "for descending order sort(function(a,b){return(b-a)})"+"<br>"+ z;
+		}*/
+
+		/*end of sort*/
+
+		/* array splice, concat and slice*/
+		//document.getElementById("array").innerHTML = x;// elements added to the x are acess in terms of string
+
+		
+		//x.splice(1, 0, "rickshaw");// this will add rickshaw to the position 1 and removes zero element from array
+		//x.splice(2, 1, "rickshaw", "belgadi");// add two element and removes last element from array
+		//x.splice(0,1)// here position zero element is removed and single element is removed due to 1
+		//z = x.concat(y);// this will add two array into single array with new variable z
+		//z = x.slice(1);
+		//document.getElementById("array").innerHTML = z;// display the array with added result
+		//document.getElementById("array1").innerHTML = z[3];// new array with index 3 is access
+
+
+
+		/*function myarray(){
+			x.unshift("rikshaw");//rikshaw will be added to the first element
+
+			document.getElementById("array").innerHTML= x;// after adding rickshaw will be added and is executed
+		}
+
+		*/
+
+		//y = x.join(",");// this will convert array into string
+
+		/*for(i=0 ; i<x.length; i++){
+			document.getElementById("array").innerHTML = y;
+		}*/
+
+		//y = x.pop();// removes last element
+		//document.getElementById("array").innerHTML = y;// this will pop the last element of array
+
+
+		
+
+		//var x=["car", "bus", "truck"];// three different are assigned in a single variable 
+
+		//var y=x[0], z =x[1];// this is the method to access array
+
+		// we can change array element in the following way
+
+		//x[1]="Tractor";
+
+		//document.getElementById("array").innerHTML = y + "<br>" + z;
+		//document.getElementById("array").innerHTML = x[1];
+		//document.getElementById("array").innerHTML = x;// for accessing full array
+
+		//document.getElementById("array").innerHTML = typeof(x);
+		
+
+		//document.getElementById("array").innerHTML = y;// this gives the length of array
+
+		/*var y=x.length; //length of the array is assigned to variable y
+		var text, i;
+		
+		for(i=0; i < y; i++){// use of for loop to exetcute the whole array
+			
+			document.getElementById("array").innerHTML += "-"+ x[i] + "<br>";
+		}
+	
+		*/
+
+		/*
+		x.push("Zeep");// this will add another element to array
+
+		var y = x.length;
+
+		for(i=0; i < y; i++){// use of for loop to exetcute the whole array
+			
+			document.getElementById("array").innerHTML += "-"+ x[i] + "<br>";
+		}
+		*/
+
+
+	</script>
+
+</body>
+</html>
